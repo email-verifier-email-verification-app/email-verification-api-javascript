@@ -1,0 +1,19 @@
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.evasrv.com/email_verification/",
+  "method": "POST",
+  "headers": {
+    "cache-control": "no-cache",
+    "content-type": "application/x-www-form-urlencoded"
+  },
+  "data": {
+    "email": "test@domain.com",
+    "user_API_token": "ggd0143305f60a131dc5d458431e756e7d1b19ba",
+    "": ""
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
